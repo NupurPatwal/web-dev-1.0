@@ -54,8 +54,9 @@ nav a{
 button:active{
     background-color: hotpink;
 }
+
 p:active{
-    font-weight: bold;
+    font-weight: bolder;
     color: green;
 }
 input[type="radio"]:checked + label{
@@ -63,6 +64,14 @@ color:red;
 font-weight : bolder;
 }
 
-.post:nth-of-type(2n){
+.post:nth-of-type(n){
     background-color: blanchedalmond;
+}
+
+p::first-line{
+    color: blueviolet;
+}
+
+p::selection{
+    background-color: chartreuse;
 }
