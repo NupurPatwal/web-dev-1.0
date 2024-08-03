@@ -353,3 +353,81 @@ object ki key ki naam.
 8. Object of Objects.
 9. Arrya of Objects
 10. Objects k bahar ki taraf curly {} hote hai.
+
+LECTURE: 6 JAVASCRIPT (Functions:-)
+
+1. function wale arguments and uske niche wale parameters.
+2. return stt print nahi hoti log karana padta hai.
+3. Types of scopes in js:
+         a. Function scopes- function k ander defined or function k outside kisi kaam k nahi.
+         b. Block scope= block k ander hi kaamh=gaar
+         c. lexical scope = nested function.
+         d. global scope - kahi bhi define kro always in  ok report.
+4. what is the concept of function expression?
+Ans - const num = function(){}
+5. what is higher order function?
+Ans- a. takes one or multiple function as arguments.
+     b. returns a function.
+  
+6. factory function is a kind of function that creates new function. What are factory function?
+7. jo functions objects (k:value pairs) k ander defined hote h aka methods.
+8. js k ander maximum everything is an object
+
+//  shorthand of using a method
+let num2 = {
+  add(a, b) {
+    return a + b;
+  },
+  sub(a, b) {
+    return a - b;
+  },
+  mul(a, b) {
+    return a * b;
+  },
+};
+
+console.log(num2.sub(5, 10));
+
+
+                                LECTURE: 7 JAVASCRIPT (this,try catch arrow)
+
+1. this is a type of keyword that referes to an object which is currently exceuting.
+2. jb bbhi hum apni kisi bhi js file k ander koi bhi function define krte hai. uss function k ander "this" ki jo value hoti hai by default genral cases m wo hamari window object hoti hai.
+3. tab k ander high level aka high priority object is window object.
+4. jb bhi hamare pass koi bhi object nahi hoti toh by default we have window object in ourselves. 
+or this k ander window object ki value store hoti hai.
+jo bhi object kisi bhi method ko exceute kr ri h. wahi hamara this hai.
+
+5. try m error toh catch run or vice- versa.
+
+
+                                LECTURE: 7 JAVASCRIPT (Miscellaneous Topics)
+ 1. Arrow functions: they are not stand alone functions. 
+ they are usually used as a value.
+ 
+ 2. Implicit return in arrow function: jb hamara arrow func bss return kr rha ho stt.(no print no calculate )
+
+ 3. remove the return stt.
+ 4. implicit return mtlb easy toh understood.
+ 5. explicit return mtlb have to written clearly something.
+ 6. What is set timeout?
+ ans-> set timeout is a function of window object. jb hame aisa koi kaam krna hota hai jisme thoda time lagega.
+ 7. set timeout is an inbuilt function.
+
+
+ 8. callback koi bhi aisa function hota hai jo dusre function m as an argument pass hota hai.
+ 9. what is set interval?
+ ans: set interval do the works repetedly after every interval.
+
+
+10. what is the d/f b/w normal fun and arrow funcs?
+11. what is this with arrow functions?
+ ans- the "this" keyword behave differnly with arrow functions owing to their commonly known differentiablty with normal func.
+ 
+12. jo func k this hoga depend upon the calling object.
+13. pr arrow func k "this" is based on lexical scope. mtlb parent k kya scope hai. --> parent k jo bhi scope hai wo arrow fun inherit kr lete hai.
+14. normal function caling object ko apna this banate H
+15. arrow func calling object k this ko apna this banate hai.
+
+16. what is the important usage of this?
+ans- jb bhi hum settimeout setinterval in sb jaise inbuilt funcs ko use krna chahte hai apni normal obj k ander. toh wha agr hum arrow func ko le apne call back k ander than we are actuallu accessing the right this.
