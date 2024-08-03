@@ -1,0 +1,355 @@
+                                LECTURE: 1 JAVASCRIPT (Basics)
+primitive type datatypes:
+1. number :- + - floating
+2. Boolean :- "true"/"false"
+3. string :- any sentecnce full or half
+4. undefined :- let a;
+5. Null :- let a= null; null is an empty value.
+
+6. Symbol :-
+7. Bigint :- any bada number.
+
+NaN--> not a number.
+
+operator precedence :-> ()> ** > *, /, %> + , -       (left to right) 
+
+
+                                LECTURE: 2 JAVASCRIPT (else, if-else, truthy falsy etc..)
+
+1. learning abt template literal. 
+2. console window if else stt. and also about the switch case including alert and prompts.                  
+3. it also contsains an assignment that i have to solve asap.
+4. output var m + include hoga or console stt main ,
+5. == operator ignore type and compares only vslue.
+
+
+                                LECTURE: 3 JAVASCRIPT (String and String Methods / Array and Array methods)
+
+# STRINGS ARE IMMUTABLE . JO BN GYI SO BAN GYI
+# Arrays are mutable.
+
+JavaScript provides a rich set of methods for manipulating and working with strings. Here are some commonly used string methods:
+
+1. charAt(index): Returns the character at the specified index.
+
+code:
+let str = "Hello";
+console.log(str.charAt(0)); // "H"
+
+2.charCodeAt(index): Returns the Unicode of the character at the specified index.
+
+code:
+let str = "Hello";
+console.log(str.charCodeAt(0)); // 72
+
+
+3.concat(...strings): Concatenates the string arguments to the calling string and returns a new string.
+
+code:
+let str1 = "Hello";
+let str2 = "World";
+console.log(str1.concat(" ", str2)); // "Hello World"
+
+4.includes(searchString, position): Checks if the string contains the specified string or characters.
+
+code:
+let str = "Hello World";
+console.log(str.includes("World")); // true
+
+5.endsWith(searchString, length): Checks if the string ends with the specified string/characters.
+
+code:
+let str = "Hello World";
+console.log(str.endsWith("World")); // true
+
+6. indexOf(searchValue, fromIndex): Returns the position of the first occurrence of a specified value in a string.
+
+code:
+let str = "Hello World";
+console.log(str.indexOf("World")); // 6
+
+
+7.lastIndexOf(searchValue, fromIndex): Returns the position of the last occurrence of a specified value in a string.
+
+Code:
+let str = "Hello World World";
+console.log(str.lastIndexOf("World")); // 12
+
+8.match(regexp): Searches a string for a match against a regular expression, and returns the matches.
+
+code:
+let str = "The rain in SPAIN stays mainly in the plain";
+console.log(str.match(/ain/g)); // ["ain", "ain", "ain"]
+
+9. repeat(count): Returns a new string with a specified number of copies of an existing string.
+
+code:
+let str = "Hello";
+console.log(str.repeat(3)); // "HelloHelloHello"
+
+10. replace(searchValue, newValue): Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+
+code:
+let str = "Hello World";
+console.log(str.replace("World", "JavaScript")); // "Hello JavaScript"
+
+11. search(regexp): Searches a string for a specified value, or regular expression, and returns the position of the match.
+
+code:
+let str = "Hello World";
+console.log(str.search("World")); // 6
+
+12.slice(beginIndex, endIndex): Extracts a part of a string and returns a new string.
+
+Code:
+let str = "Hello World";
+console.log(str.slice(0, 5)); // "Hello"
+
+13. split(separator, limit): Splits a string into an array of substrings.
+
+Code:
+let str = "Hello World";
+console.log(str.split(" ")); // ["Hello", "World"]
+
+14. startsWith(searchString, position): Checks if a string starts with the specified string/characters.
+
+code:
+let str = "Hello World";
+console.log(str.startsWith("Hello")); // true
+
+15. substring(indexStart, indexEnd): Extracts characters from a string, between two specified indices.
+
+Code:
+let str = "Hello World";
+console.log(str.substring(0, 5)); // "Hello"
+
+16. toLowerCase(): Converts a string to lowercase letters.
+
+Code:
+let str = "Hello World";
+console.log(str.toLowerCase()); // "hello world"
+
+17. toUpperCase(): Converts a string to uppercase letters.
+
+Code:
+let str = "Hello World";
+console.log(str.toUpperCase()); // "HELLO WORLD"
+
+18. trim(): Removes whitespace from both ends of a string.
+
+Code:
+let str = "   Hello World   ";
+console.log(str.trim()); // "Hello World"
+
+19. padStart(targetLength, padString): Pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.
+
+Code: 
+let str = "5";
+console.log(str.padStart(4, "0")); // "0005"
+
+20. padEnd(targetLength, padString): Pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.
+
+
+Code: 
+let str = "5";
+console.log(str.padEnd(4, "0")); // "5000"
+
+
+
+                                   ARRAY METHODS:
+
+
+JavaScript provides a wide range of methods for manipulating and working with arrays. Here are some commonly used array methods:
+
+1. push(...elements): Adds one or more elements to the end of an array and returns the new length of the array.
+
+code:
+let arr = [1, 2, 3];
+arr.push(4);
+console.log(arr); // [1, 2, 3, 4]
+
+2. pop(): Removes the last element from an array and returns that element.
+
+CODE:
+let arr = [1, 2, 3];
+let lastElement = arr.pop();
+console.log(lastElement); // 3
+console.log(arr); // [1, 2]
+
+3. shift(): Removes the first element from an array and returns that element.
+
+CODE:
+let arr = [1, 2, 3];
+let firstElement = arr.shift();
+console.log(firstElement); // 1
+console.log(arr); // [2, 3]
+
+4. unshift(...elements): Adds one or more elements to the beginning of an array and returns the new length of the array.
+
+CODE:
+let arr = [1, 2, 3];
+arr.unshift(0);
+console.log(arr); // [0, 1, 2, 3]
+
+5.concat(...arrays): Merges two or more arrays and returns a new array.
+
+CODE:
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let arr3 = arr1.concat(arr2);
+console.log(arr3); // [1, 2, 3, 4]
+
+6.slice(start, end): Returns a shallow copy of a portion of an array into a new array.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+let newArr = arr.slice(1, 3);
+console.log(newArr); // [2, 3]
+
+7. splice(start, deleteCount, ...items): Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+Splice manipulats the array.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+arr.splice(1, 2, "a", "b");
+console.log(arr); // [1, "a", "b", 4, 5]
+
+8.indexOf(element, fromIndex): Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.indexOf(3)); // 2
+
+9.lastIndexOf(element, fromIndex): Returns the last index at which a given element can be found in the array, or -1 if it is not present.
+
+CODE:
+let arr = [1, 2, 3, 2, 1];
+console.log(arr.lastIndexOf(2)); // 3
+
+10.forEach(callback): Executes a provided function once for each array element.
+
+CODE:
+let arr = [1, 2, 3];
+arr.forEach((element) => {
+  console.log(element); // 1, 2, 3
+});
+
+11. map(callback): Creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+CODE:
+let arr = [1, 2, 3];
+let newArr = arr.map((element) => element * 2);
+console.log(newArr); // [2, 4, 6]
+
+12.filter(callback): Creates a new array with all elements that pass the test implemented by the provided function.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+let newArr = arr.filter((element) => element > 2);
+console.log(newArr); // [3, 4, 5]
+
+13.reduce(callback, initialValue): Executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+let sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum); // 15
+
+14. some(callback): Tests whether at least one element in the array passes the test implemented by the provided function.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+let hasEvenNumber = arr.some((element) => element % 2 === 0);
+console.log(hasEvenNumber); // true
+
+
+15. some(callback): Tests whether at least one element in the array passes the test implemented by the provided function.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+let hasEvenNumber = arr.some((element) => element % 2 === 0);
+console.log(hasEvenNumber); // true
+
+16.every(callback): Tests whether all elements in the array pass the test implemented by the provided function.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+let allPositive = arr.every((element) => element > 0);
+console.log(allPositive); // true
+
+17. find(callback): Returns the value of the first element in the array that satisfies the provided testing function. Otherwise, undefined is returned.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+let found = arr.find((element) => element > 3);
+console.log(found); // 4
+
+18.findIndex(callback): Returns the index of the first element in the array that satisfies the provided testing function. Otherwise, -1 is returned.
+
+CODE:
+let arr = [1, 2, 3, 4, 5];
+let index = arr.findIndex((element) => element > 3);
+console.log(index); // 3
+
+19. sort(compareFunction): Sorts the elements of an array in place and returns the array.
+
+CODE:
+let arr = [5, 2, 4, 1, 3];
+arr.sort((a, b) => a - b);
+console.log(arr); // [1, 2, 3, 4, 5]
+
+20.reverse(): Reverses the order of the elements in an array in place.
+
+CODE:
+let arr = [1, 2, 3];
+arr.reverse();
+console.log(arr); // [3, 2, 1]
+
+21. join(separator): Joins all elements of an array into a string and returns this string.
+
+
+CODE:
+let arr = [1, 2, 3];
+let str = arr.join("-");
+console.log(str); // "1-2-3"
+
+
+22.toString(): Returns a string representing the specified array and its elements.
+
+CODE:
+let arr = [1, 2, 3];
+console.log(arr.toString()); // "1,2,3"
+
+23. flat(depth) (ES2019): Flattens nested arrays up to the specified depth.
+
+CODE:
+let arr = [1, 2, [3, 4, [5, 6]]];
+let flatArr = arr.flat();
+console.log(flatArr); // [1, 2, 3, 4, [5, 6]]
+
+24. copyWithin(target, start, end): Copies a portion of an array to another location within the same array.
+
+CODE:
+
+const numbers = [1, 2, 3, 4, 5];
+numbers.copyWithin(0, 3, 5); // Now numbers contains [4, 5, 3, 4, 5]
+
+
+
+                                LECTURE: 3 JAVASCRIPT (Object Literals and methods)
+
+1. object Literals are used to store complex keywords.
+2. object Literals are generally initiated by const.
+3. They are started with curly braces {}
+4. how to get values of the object ? 
+
+Ans : tarika 1 and 2 console.log(xPost.username);
+console.log(xPost["username"]);
+object ki key ki naam.
+5. unable to use dot op. jb assingning variable to object.
+
+6. Object m value store in the form of key : value pair.
+7. JS auto converts keys to strings.
+8. Object of Objects.
+9. Arrya of Objects
+10. Objects k bahar ki taraf curly {} hote hai.
